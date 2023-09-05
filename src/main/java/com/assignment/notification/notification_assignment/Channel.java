@@ -9,7 +9,6 @@ import org.springframework.context.annotation.Configuration;
     Set this class up a @Bean in the main class. Set the type to "SMS".
 */
 
-@Configuration
 public class Channel {
     // attribute
     String type;
@@ -20,15 +19,15 @@ public class Channel {
 
     // Use Channel class as a bean in the main class by annotating channelConfig()
     // with @Bean
-    @Bean
-    public Channel channelConfig() {
-        // create an instance of channel
-        Channel channelBean = new Channel();
-        // set the type of the instance to SMS
-        channelBean.setType("SMS");
-        // return the instance
-        return channelBean;
-    }
+    // @Bean
+    // public Channel channelConfig() {
+    // // create an instance of channel
+    // Channel channelBean = new Channel();
+    // // set the type of the instance to SMS
+    // channelBean.setType("SMS");
+    // // return the instance
+    // return channelBean;
+    // }
 
     // getter
     public String getType() {
